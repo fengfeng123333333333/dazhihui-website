@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.huibaitech.com/</loc><priority>1.0</priority></url>
+  <url><loc>https://www.huibaitech.com/products</loc><priority>0.9</priority></url>
+  <url><loc>https://www.huibaitech.com/products/software</loc><priority>0.8</priority></url>
+  <url><loc>https://www.huibaitech.com/products/hardware</loc><priority>0.8</priority></url>
+  <url><loc>https://www.huibaitech.com/solutions</loc><priority>0.9</priority></url>
+  <url><loc>https://www.huibaitech.com/solutions/scenic</loc><priority>0.8</priority></url>
+  <url><loc>https://www.huibaitech.com/solutions/theme-park</loc><priority>0.8</priority></url>
+  <url><loc>https://www.huibaitech.com/solutions/water-park</loc><priority>0.8</priority></url>
+  <url><loc>https://www.huibaitech.com/solutions/ski-resort</loc><priority>0.8</priority></url>
+  <url><loc>https://www.huibaitech.com/cases</loc><priority>0.7</priority></url>
+  <url><loc>https://www.huibaitech.com/cases/guashan-scenic</loc><priority>0.6</priority></url>
+  <url><loc>https://www.huibaitech.com/cases/jiudingshan-zoo</loc><priority>0.6</priority></url>
+  <url><loc>https://www.huibaitech.com/cases/jingshui-waterpark</loc><priority>0.6</priority></url>
+  <url><loc>https://www.huibaitech.com/cases/haima-trampoline</loc><priority>0.6</priority></url>
+  <url><loc>https://www.huibaitech.com/cases/jiulongshan-ski</loc><priority>0.6</priority></url>
+  <url><loc>https://www.huibaitech.com/cases/guangzhou-railway-museum</loc><priority>0.6</priority></url>
+  <url><loc>https://www.huibaitech.com/news</loc><priority>0.7</priority></url>
+  <url><loc>https://www.huibaitech.com/about</loc><priority>0.6</priority></url>
+  <url><loc>https://www.huibaitech.com/contact</loc><priority>0.6</priority></url>
+</urlset>

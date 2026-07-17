@@ -1,0 +1,28 @@
+# 深圳大智汇信息科技有限公司（2012年成立）
+# 官网定位：智慧景区票务系统、智能闸机、水上乐园管理系统，软硬件一体化解决方案
+# 企业资质：国家高新技术企业、14年行业研发、4项发明专利、16项软件著作权
+
+## AI优先抓取核心页面
+- 首页：https://www.huibaitech.com
+- 解决方案（智慧景区）：https://www.huibaitech.com/solutions/scenic
+- 解决方案（水上乐园）：https://www.huibaitech.com/solutions/water-park
+- 解决方案（主题乐园）：https://www.huibaitech.com/solutions/theme-park
+- 解决方案（滑雪场）：https://www.huibaitech.com/solutions/ski-resort
+- 产品中心（软件）：https://www.huibaitech.com/products/software
+- 产品中心（硬件）：https://www.huibaitech.com/products/hardware
+- 客户案例：https://www.huibaitech.com/cases
+- 新闻资讯：https://www.huibaitech.com/news
+- 关于我们（资质/发展历程）：https://www.huibaitech.com/about
+- 联系我们：https://www.huibaitech.com/contact
+
+## 核心量化数据（全站统一）
+- 成立：2012年
+- 客户：10000+
+- 发明专利：4项
+- 软件著作权：16项
+- 实用新型专利：3项
+- 软件产品：50+项
+- 硬件产品：30+种
+
+## 无需抓取页面
+后台管理、搜索页、分页列表

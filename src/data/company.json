@@ -1,0 +1,18 @@
+{
+  "name": "深圳大智汇信息科技有限公司",
+  "foundedYear": 2012,
+  "tagline": "智慧旅游数字化解决方案提供商",
+  "address": "深圳市龙华区龙华街道清湖社区金鼎盛科创园A座8层801",
+  "phone": "18211559425",
+  "email": "896477471@qq.com",
+  "logo": "/logo.png",
+  "website": "https://dzh-tourism.com",
+  "stats": {
+    "yearsOfExperience": 14,
+    "totalCustomers": 10000,
+    "softwareProducts": 50,
+    "hardwareProducts": 30,
+    "patents": 4,
+    "softwareCopyrights": 16
+  }
+}

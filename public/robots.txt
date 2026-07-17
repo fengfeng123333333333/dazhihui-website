@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /search?
+
+Sitemap: https://dzh-tourism.com/sitemap.xml
+
+# AI爬虫（豆包/DeepSeek/GPT等）
+User-agent: ByteSpider
+Allow: /
+User-agent: GPTBot
+Allow: /
+User-agent: Bingbot
+Allow: /
