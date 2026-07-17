@@ -110,7 +110,7 @@ useSchema(faqSchemaJson);
       </div>
       <div class="text-center mt-10">
         <router-link to="/products" class="btn-primary"
-          >查看全部产品</router-link
+          >查看全部产品11111</router-link
         >
       </div>
     </div>
