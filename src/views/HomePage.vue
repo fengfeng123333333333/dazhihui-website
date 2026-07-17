@@ -195,7 +195,7 @@ useSchema(faqSchemaJson);
         准备好升级您的景区管理了吗？
       </h2>
       <p class="text-white mb-8 max-w-md mx-auto">
-        14年经验 · 7×24h售后 · 秒回复 · 全国上门 · 立即获取专属方案
+        14年经验 · 7×24h售后 · 秒回复 · 全国上门 · 立即获取专属方案1111
       </p>
       <router-link
         to="/contact"
