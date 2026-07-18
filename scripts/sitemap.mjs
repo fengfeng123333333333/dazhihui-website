@@ -2,7 +2,7 @@ import { readdirSync, statSync, writeFileSync } from "fs";
 import { join, extname } from "path";
 
 const DIST = join(import.meta.dirname, "..", "dist");
-const BASE = "https://dzh-tourism.com";
+const BASE = "https://www.dzh-tourism.com";
 
 // 递归收集所有 .html 文件
 function walk(dir) {
