@@ -5,6 +5,7 @@ import { useMeta } from "@/composables/useMeta.js";
 import { useScrollReveal } from "@/composables/useScrollAnimate.js";
 import { useSchema } from "@/composables/useSchema.js";
 import casesData from "@/data/cases.json";
+import productsData from "@/data/products.json";
 
 const route = useRoute();
 const slug = computed(
@@ -25,6 +26,28 @@ useMeta({
 const relatedCases = computed(() =>
   casesData.featured.filter((c) => c.slug !== route.params.slug).slice(0, 3),
 );
+
+// 案例类型 → 产品映射（智能推荐相关产品）
+const categoryProductMap = {
+  户外景区: ["scenic-ticket", "turnstile"],
+  水上乐园: ["water-park"],
+  滑雪场: ["ski-resort"],
+  儿童乐园: ["card-system", "trampoline"],
+  无动力乐园: ["unpowered-park", "card-system"],
+  博物馆: ["museum"],
+  体育馆: ["sports-venue", "ball-venue"],
+};
+const relatedProducts = computed(() => {
+  const slugs = categoryProductMap[item.value?.category] || [];
+  return slugs
+    .map((s) =>
+      [...productsData.software, ...productsData.hardware].find(
+        (p) => p.slug === s,
+      ),
+    )
+    .filter(Boolean)
+    .slice(0, 3);
+});
 
 // 面包屑结构化数据（Google 搜索结果增强）
 const breadcrumbJson = computed(() =>
@@ -253,6 +276,43 @@ useScrollReveal(".detail-section", { y: 30, stagger: 0.1 });
               class="text-xs text-[var(--color-text-secondary)] mt-1 line-clamp-2"
             >
               {{ rc.summary }}
+            </p>
+          </router-link>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Products -->
+    <section
+      v-if="relatedProducts.length"
+      class="py-section bg-[var(--color-bg-secondary)]"
+    >
+      <div class="max-w-content mx-auto px-4">
+        <h2
+          class="text-h2 font-heading font-bold text-[var(--color-text-primary)] text-center mb-8"
+        >
+          相关产品
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
+          <router-link
+            v-for="rp in relatedProducts"
+            :key="rp.slug"
+            to="/products/software"
+            class="bg-[var(--card-bg)] border border-[var(--card-border)] rounded-card p-4 hover:shadow-card-hover transition-all duration-300 group"
+          >
+            <img
+              :src="rp.image"
+              :alt="rp.name"
+              class="w-full aspect-[16/10] object-contain rounded-lg mb-3 bg-[var(--color-bg-tertiary)]"
+              loading="lazy"
+            />
+            <h3
+              class="font-heading font-semibold text-[var(--color-text-primary)] group-hover:text-[var(--color-primary)] transition-colors"
+            >
+              {{ rp.name }}
+            </h3>
+            <p class="text-xs text-[var(--color-text-secondary)] mt-1">
+              {{ rp.subtitle }}
             </p>
           </router-link>
         </div>

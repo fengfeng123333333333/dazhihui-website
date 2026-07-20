@@ -128,7 +128,7 @@ useScrollReveal(".article-body", { y: 30 });
       <div class="max-w-3xl mx-auto px-4">
         <div class="article-body">
           <div
-            class="prose-custom text-[var(--color-text-secondary)] leading-relaxed text-base space-y-4"
+            class="prose-custom text-[var(--color-text-secondary)] leading-relaxed text-base space-y-4 whitespace-pre-line"
           >
             {{ article.content }}
           </div>

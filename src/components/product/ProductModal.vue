@@ -1,11 +1,29 @@
 <script setup>
+import { computed } from "vue";
 import { X } from "lucide-vue-next";
+import { useSchema } from "@/composables/useSchema.js";
 
 const props = defineProps({
   product: { type: Object, required: true },
   visible: { type: Boolean, default: false },
 });
 const emit = defineEmits(["close"]);
+
+// FAQPage 结构化数据（百度/Google/AI搜索增强）
+const faqSchemaJson = computed(() => {
+  if (!props.product?.faqs?.length) return "";
+  return JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: props.product.faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  });
+});
+
+useSchema(faqSchemaJson);
 
 const iconMap = {
   Ticket: "🎫",
@@ -142,6 +160,45 @@ const iconMap = {
                   {{ s.desc }}
                 </p>
               </div>
+            </div>
+
+            <!-- FAQ -->
+            <div v-if="product.faqs && product.faqs.length" class="mb-8">
+              <h3 class="font-heading font-semibold text-text-primary mb-4">
+                常见问题
+              </h3>
+              <div class="space-y-3">
+                <details
+                  v-for="(f, i) in product.faqs"
+                  :key="i"
+                  class="group rounded-card border border-[var(--color-border-light)] overflow-hidden"
+                >
+                  <summary
+                    class="px-4 py-3 cursor-pointer font-medium text-sm text-text-primary bg-[var(--color-bg-secondary)] hover:bg-[var(--color-bg-tertiary)] transition-colors list-none flex items-center justify-between"
+                  >
+                    {{ f.q }}
+                    <span
+                      class="text-xs text-[var(--color-text-tertiary)] group-open:rotate-180 transition-transform"
+                      >▼</span
+                    >
+                  </summary>
+                  <p
+                    class="px-4 py-3 text-sm text-text-secondary leading-relaxed"
+                  >
+                    {{ f.a }}
+                  </p>
+                </details>
+              </div>
+            </div>
+
+            <!-- 价格引导 -->
+            <div
+              class="mb-8 p-4 rounded-card bg-[var(--color-primary-light)] border border-[var(--color-primary)]/20"
+            >
+              <p class="text-sm text-[var(--color-text-secondary)]">
+                💬
+                具体价格根据景区规模、功能需求、硬件数量定制，联系我们获取专属报价方案。
+              </p>
             </div>
 
             <!-- CTA -->
