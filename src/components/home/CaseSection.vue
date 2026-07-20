@@ -20,15 +20,28 @@ useScrollReveal(".case-card", { y: 30, stagger: 0.1 });
 
       <!-- Logo Wall -->
       <div class="overflow-hidden mb-12 py-4">
-        <div class="flex gap-8 animate-scroll">
-          <img
+        <div class="flex gap-6 animate-scroll">
+          <router-link
             v-for="(logo, i) in [...cases.logoWall, ...cases.logoWall]"
             :key="i"
-            :src="logo.image"
-            :alt="logo.name"
-            class="h-10 object-contain opacity-60 hover:opacity-100 transition-opacity flex-shrink-0"
-            loading="lazy"
-          />
+            :to="logo.slug ? `/cases/${logo.slug}` : '/cases'"
+            class="flex flex-col items-center gap-2 flex-shrink-0 group"
+          >
+            <div
+              class="w-24 h-24 rounded-xl bg-[var(--card-bg)] border border-[var(--card-border)] flex items-center justify-center p-3 overflow-hidden group-hover:shadow-card-hover group-hover:border-[var(--color-primary)] transition-all duration-300"
+            >
+              <img
+                :src="logo.image"
+                :alt="logo.name"
+                class="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <span
+              class="text-xs text-[var(--color-text-secondary)] group-hover:text-[var(--color-primary)] transition-colors text-center leading-tight max-w-[6rem] truncate"
+              >{{ logo.name }}</span
+            >
+          </router-link>
         </div>
       </div>
 

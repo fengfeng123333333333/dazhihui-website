@@ -100,61 +100,19 @@
     }
   ],
   "logoWall": [
-    {
-      "name": "九龙山滑雪场",
-      "image": "/anli/九龙山滑雪场.jpeg"
-    },
-    {
-      "name": "哈尔滨亚布力滑雪场",
-      "image": "/anli/哈尔滨亚布力滑雪场.jpeg"
-    },
-    {
-      "name": "北京奥森17滑四季滑雪场",
-      "image": "/anli/北京奥森17滑四季滑雪场.jpeg"
-    },
-    {
-      "name": "深圳阿多罗堡萌宠工场",
-      "image": "/anli/深圳阿多罗堡萌宠工场.jpeg"
-    },
-    {
-      "name": "广州金沙洲奇幻萌宠部落",
-      "image": "/anli/广州金沙洲奇幻萌宠部落.jpeg"
-    },
-    {
-      "name": "天津光合谷萌宠动物园",
-      "image": "/anli/天津光合谷萌宠动物园.jpeg"
-    },
-    {
-      "name": "清远仓酷潮玩",
-      "image": "/anli/清远仓酷潮玩.jpeg"
-    },
-    {
-      "name": "深圳米兜欢乐王国",
-      "image": "/anli/深圳米兜欢乐王国.jpeg"
-    },
-    {
-      "name": "厦门未来城市都市乐园",
-      "image": "/anli/厦门未来城市都市乐园.jpeg"
-    },
-    {
-      "name": "湖南湘阴博物馆",
-      "image": "/anli/湖南湘阴博物馆.jpeg"
-    },
-    {
-      "name": "芷江受降旧址和纪念馆",
-      "image": "/anli/芷江受降旧址和纪念馆.jpeg"
-    },
-    {
-      "name": "广州铁路博物馆",
-      "image": "/anli/广州铁路博物馆.jpeg"
-    },
-    {
-      "name": "嘉兴平湖市体育馆",
-      "image": "/anli/嘉兴平湖市体育馆.webp"
-    },
-    {
-      "name": "黑龙江省京剧院中山剧场",
-      "image": "/anli/黑龙江省京剧院中山剧场.webp"
-    }
+    { "name": "九龙山滑雪场", "image": "/anli/九龙山滑雪场.jpeg", "slug": "jiulongshan-ski" },
+    { "name": "哈尔滨亚布力滑雪场", "image": "/anli/哈尔滨亚布力滑雪场.jpeg", "slug": "yabuli-ski" },
+    { "name": "北京奥森17滑四季滑雪场", "image": "/anli/北京奥森17滑四季滑雪场.jpeg", "slug": "aosen-ski" },
+    { "name": "深圳阿多罗堡萌宠工场", "image": "/anli/深圳阿多罗堡萌宠工场.jpeg", "slug": "adolobao-pet-farm" },
+    { "name": "广州金沙洲奇幻萌宠部落", "image": "/anli/广州金沙洲奇幻萌宠部落.jpeg", "slug": "jinshazhou-pet-tribe" },
+    { "name": "天津光合谷萌宠动物园", "image": "/anli/天津光合谷萌宠动物园.jpeg", "slug": "guanghe-zoo-tianjin" },
+    { "name": "清远仓酷潮玩", "image": "/anli/清远仓酷潮玩.jpeg", "slug": "cangku-play" },
+    { "name": "深圳米兜欢乐王国", "image": "/anli/深圳米兜欢乐王国.jpeg", "slug": "midou-kingdom" },
+    { "name": "厦门未来城市都市乐园", "image": "/anli/厦门未来城市都市乐园.jpeg", "slug": "future-city-xiamen" },
+    { "name": "湖南湘阴博物馆", "image": "/anli/湖南湘阴博物馆.jpeg", "slug": "xiangyin-museum" },
+    { "name": "芷江受降旧址和纪念馆", "image": "/anli/芷江受降旧址和纪念馆.jpeg", "slug": "zhijiang-memorial" },
+    { "name": "广州铁路博物馆", "image": "/anli/广州铁路博物馆.jpeg", "slug": "guangzhou-railway-museum" },
+    { "name": "嘉兴平湖市体育馆", "image": "/anli/嘉兴平湖市体育馆.webp", "slug": "pinghu-stadium" },
+    { "name": "黑龙江省京剧院中山剧场", "image": "/anli/黑龙江省京剧院中山剧场.webp", "slug": "heilongjiang-theater" }
   ]
 }
