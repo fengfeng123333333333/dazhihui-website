@@ -402,10 +402,10 @@ useScrollReveal(".faq-item", { y: 20, stagger: 0.06 });
             立即咨询
           </router-link>
           <a
-            href="tel:18211559425"
+            href="tel:15986812063"
             class="inline-flex items-center px-8 py-3 border border-[var(--color-text-inverse)]/30 text-[var(--color-text-inverse)] rounded-btn font-medium min-h-touch hover:bg-[var(--color-text-inverse)]/10 transition-colors"
           >
-            致电 18211559425
+            致电 15986812063
             <ExternalLink class="w-4 h-4 ml-2" />
           </a>
         </div>
