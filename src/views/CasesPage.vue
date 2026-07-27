@@ -2,7 +2,7 @@
 import { ref, computed } from "vue";
 import { useMeta } from "@/composables/useMeta.js";
 import { useScrollReveal } from "@/composables/useScrollAnimate.js";
-import { ArrowRight, MapPin, Building } from "lucide-vue-next";
+import { ArrowRight, Download, MapPin, Building } from "lucide-vue-next";
 import casesData from "@/data/cases.json";
 
 useMeta({
@@ -56,6 +56,29 @@ useScrollReveal(".case-card", { y: 30, stagger: 0.08 });
           {{ allCases.length }}+精选案例 · 覆盖{{ categories.length - 1 }}大行业
           · 真实效果数据
         </p>
+      </div>
+    </section>
+
+    <!-- PDF 下载横幅 -->
+    <section
+      class="py-4 bg-[var(--color-bg)] border-b border-[var(--color-border-light)]"
+    >
+      <div class="max-w-content mx-auto px-4">
+        <a
+          href="/案例分享v13.pdf"
+          download
+          class="flex items-center gap-3 max-w-lg mx-auto px-5 py-3 bg-[var(--color-primary)]/5 border border-[var(--color-primary)]/20 rounded-card hover:bg-[var(--color-primary)]/10 transition-all duration-200 group"
+        >
+          <Download class="w-5 h-5 text-[var(--color-primary)] flex-shrink-0" />
+          <span
+            class="text-sm text-[var(--color-text-primary)] group-hover:text-[var(--color-primary)] transition-colors"
+          >
+            <strong>案例分享PDF</strong>
+            <span class="text-[var(--color-text-tertiary)] ml-2"
+              >智慧旅游票务系统成功案例合集 · 点击下载</span
+            >
+          </span>
+        </a>
       </div>
     </section>
 
