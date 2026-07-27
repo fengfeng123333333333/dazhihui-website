@@ -15,8 +15,7 @@ import company from "@/data/company.json";
 
 useMeta({
   title: "联系我们-深圳大智汇信息科技有限公司",
-  description:
-    "联系大智汇，获取智慧旅游票务系统、景区闸机、水上乐园管理系统等产品方案。电话：18211559425，地址：深圳市龙华区。",
+  description: `联系大智汇，获取智慧旅游票务系统、景区闸机、水上乐园管理系统等产品方案。电话：${company.phone}，地址：深圳市龙华区。`,
 });
 
 const form = ref({ name: "", company: "", phone: "", email: "", message: "" });
@@ -56,7 +55,7 @@ async function handleSubmit() {
     if (!res.ok) throw new Error("提交失败");
     submitted.value = true;
   } catch (e) {
-    error.value = "提交失败，请稍后重试或直接拨打电话 18211559425";
+    error.value = "提交失败，请稍后重试或直接拨打电话 15986812063";
   } finally {
     submitting.value = false;
   }
@@ -138,11 +137,40 @@ onMounted(async () => {
                   >
                     联系电话
                   </h3>
-                  <a
-                    href="tel:18211559425"
-                    class="text-sm text-[var(--color-primary)] hover:underline"
-                    >{{ company.phone }}</a
-                  >
+                  <div>
+                    <a
+                      style="margin-right: 5px"
+                      href="tel:15986812063"
+                      class="text-sm text-[var(--color-primary)] hover:underline"
+                      >15986812063</a
+                    >
+                    <a
+                      href="tel:13246678606"
+                      class="text-sm text-[var(--color-primary)] hover:underline"
+                      >13246678606</a
+                    >
+                  </div>
+                  <div>
+                    <a
+                      style="margin-right: 5px"
+                      href="tel:15817218178"
+                      class="text-sm text-[var(--color-primary)] hover:underline"
+                      >15817218178</a
+                    >
+                    <a
+                      href="tel:15817232978"
+                      class="text-sm text-[var(--color-primary)] hover:underline"
+                      >15817232978</a
+                    >
+                  </div>
+                  <div>
+                    <a
+                      style="margin-right: 5px"
+                      href="tel:18319068636"
+                      class="text-sm text-[var(--color-primary)] hover:underline"
+                      >18319068636</a
+                    >
+                  </div>
                 </div>
               </div>
               <div

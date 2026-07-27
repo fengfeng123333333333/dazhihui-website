@@ -83,7 +83,8 @@ import company from "@/data/company.json";
             联系
           </h5>
           <ul class="space-y-2 text-sm">
-            <li>📞 {{ company.phone }}</li>
+            <li>📞 15986812063&nbsp;13246678606&nbsp;15817218178</li>
+            <li>📞 15817232978&nbsp;18319068636</li>
             <li>📍 {{ company.address }}</li>
           </ul>
         </div>
@@ -109,3 +110,8 @@ import company from "@/data/company.json";
     </div>
   </footer>
 </template>
+<style scoped>
+.text-sm {
+  font-size: 0.775rem;
+}
+</style>
