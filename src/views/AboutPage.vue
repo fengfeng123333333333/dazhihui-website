@@ -264,7 +264,7 @@ useScrollReveal(".honor-card", { y: 20, stagger: 0.08 });
         </p>
         <div class="max-w-md mx-auto">
           <a
-            href="/大智汇智慧旅游景区票务系统解决方案2026 v8.pptx"
+            href="/大智汇智慧旅游景区票务系统解决方案2026.pdf"
             download
             class="inline-flex items-center gap-3 px-8 py-5 bg-[var(--card-bg)] border-2 border-[var(--color-border-light)] rounded-card hover:border-[var(--color-primary)] hover:shadow-card-hover transition-all duration-300 group"
           >
@@ -280,7 +280,7 @@ useScrollReveal(".honor-card", { y: 20, stagger: 0.08 });
                 企业宣传PPT
               </p>
               <p class="text-sm text-[var(--color-text-tertiary)] mt-0.5">
-                大智汇智慧旅游景区票务系统解决方案 · PPTX 格式
+                大智汇智慧旅游景区票务系统解决方案 · PDF 格式
               </p>
             </div>
           </a>
