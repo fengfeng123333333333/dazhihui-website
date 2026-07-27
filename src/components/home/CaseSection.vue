@@ -18,7 +18,6 @@ useScrollReveal(".case-card", { y: 30, stagger: 0.1 });
         {{ cases.logoWall.length }}+行业标杆的共同选择
       </p>
 
-      <!-- Logo Wall -->
       <div class="overflow-hidden mb-12 py-4">
         <div class="flex gap-6 animate-scroll">
           <router-link
