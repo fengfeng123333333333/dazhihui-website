@@ -6,6 +6,7 @@ import {
   ArrowRight,
   Award,
   Building,
+  Download,
   MapPin,
   Phone,
   Mail,
@@ -246,6 +247,43 @@ useScrollReveal(".honor-card", { y: 20, stagger: 0.08 });
               loading="lazy"
             />
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 资料下载 -->
+    <section class="py-section bg-[var(--color-bg)]">
+      <div class="max-w-content mx-auto px-4 text-center">
+        <h2
+          class="text-h2 font-heading font-bold text-[var(--color-text-primary)] mb-4"
+        >
+          资料下载
+        </h2>
+        <p class="text-[var(--color-text-secondary)] max-w-lg mx-auto mb-10">
+          智慧旅游票务系统解决方案详细介绍，含产品功能、技术架构、成功案例
+        </p>
+        <div class="max-w-md mx-auto">
+          <a
+            href="/大智汇智慧旅游景区票务系统解决方案2026 v8.pptx"
+            download
+            class="inline-flex items-center gap-3 px-8 py-5 bg-[var(--card-bg)] border-2 border-[var(--color-border-light)] rounded-card hover:border-[var(--color-primary)] hover:shadow-card-hover transition-all duration-300 group"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-[var(--color-primary)]/10 flex items-center justify-center flex-shrink-0"
+            >
+              <Download class="w-6 h-6 text-[var(--color-primary)]" />
+            </div>
+            <div class="text-left">
+              <p
+                class="font-semibold text-[var(--color-text-primary)] group-hover:text-[var(--color-primary)] transition-colors"
+              >
+                企业宣传PPT
+              </p>
+              <p class="text-sm text-[var(--color-text-tertiary)] mt-0.5">
+                大智汇智慧旅游景区票务系统解决方案 · PPTX 格式
+              </p>
+            </div>
+          </a>
         </div>
       </div>
     </section>
