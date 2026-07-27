@@ -54,7 +54,7 @@ useHeroEntrance(".hero-section");
           <dl class="text-center md:text-left">
             <dt class="text-sm text-text-tertiary mb-1">企业认定</dt>
             <dd class="text-3xl font-heading font-bold text-text-primary">
-              省市级
+              深圳市
             </dd>
             <dd class="text-xs text-text-tertiary mt-0.5">创新型中小企业</dd>
           </dl>
